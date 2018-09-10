@@ -1,6 +1,8 @@
 # step-01
 ## 1. 搭建项目整体界面结构
-<img width="200"  src="https://github.com/dan069/Music/blob/master/img/1.png"/>
+<img width="200"  src="https://github.com/dan069/Takeaway/blob/master/0.JPG"/>
+<img width="200"  src="https://github.com/dan069/Takeaway/blob/master/1.JPG"/>
+<img width="200"  src="https://github.com/dan069/Takeaway/blob/master/2.JPG"/>
     stylus的理解和使用
         结构化, 变量, 函数/minxin(混合)
     vue-router的理解和使用
