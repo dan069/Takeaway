@@ -1,8 +1,10 @@
 # step-01
 ## 1. 搭建项目整体界面结构
+<div>
 <img width="200"  src="https://github.com/dan069/Takeaway/blob/master/0.JPG"/>
 <img width="200"  src="https://github.com/dan069/Takeaway/blob/master/1.JPG"/>
-<img width="200"  src="https://github.com/dan069/Takeaway/blob/master/2.JPG"/>
+<img width="200"  src="https://github.com/dan069/Takeaway/blob/master/3.JPG"/>
+ </div
     stylus的理解和使用
         结构化, 变量, 函数/minxin(混合)
     vue-router的理解和使用
