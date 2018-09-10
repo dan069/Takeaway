@@ -1,17 +1,5 @@
 # day01
-## 1. 项目开发准备
-    项目描述
-    技术选型
-    API接口
-    你能从此项目中学到什么?
-
-## 2. 开启项目开发
-    使用脚手架创建项目
-    安装所有依赖/指定依赖
-    开发环境运行
-    生产环境打包与发布
-
-## 3. 搭建项目整体界面结构
+## 1. 搭建项目整体界面结构
     stylus的理解和使用
         结构化, 变量, 函数/minxin(混合)
     vue-router的理解和使用
@@ -22,20 +10,20 @@
     底部导航组件: FooterGuide
     导航路由组件: Msite/Search/Order/Profile
 
-## 4. 抽取组件
+## 2. 抽取组件
     头部组件: HeaderTop, 通过slot来实现组件通信标签结构
     商家列表组件: ShopList
     
-## 5. 登陆路由组件
+## 3. 登陆路由组件
      静态组件
      FooterGuide的显示/隐藏: 通过路由的meta
      
-## 6. 后台项目
+## 4. 后台项目
     启动后台项目: 理解前后台分离
     测试后台接口: 使用postman
     修正接口文档
 
-## 7. 前后台交互
+## 5. 前后台交互
     ajax请求库: axios
     ajax请求函数封装: axios + promise
     接口请求函数封装: 每个后台接口
@@ -118,88 +106,6 @@
     2). mockjs的理解和使用
     3). jons数据设计的理解
      
-## 4. ShopHeader组件
-    1). 异步显示数据效果的编码流程
-        ajax
-          ajax请求函数
-          接口请求函数
-        vuex
-          state
-          mutation-types
-          actions
-          mutations
-        组件
-          dispatch(): 异步获取后台数据到vuex的state
-          mapState(): 从vuex的state中读取对应的数据
-          模板中显示
-    2). 初始显示异常
-        情况1: Cannot read property 'xxx' of undefined"
-        原因: 初始值是空对象, 内部没有数据, 而模块中直接显示3层表达式
-        解决: 使用v-if指令
-        
-        情况2: Cannot read property 'xxx' of null"
-     
-    3). vue transition动画
-    
-# day04
-## 1. ShopGoods组件
-    1). 动态展现列表数据
-    2). 基本滑动:
-        使用better-scroll
-        理解其基本原理
-        创建BScroll对象的时机
-          watch + $nextTick()
-          callback + $nextTick
-    3). 滑动右侧列表, 左侧同步更新
-        better-scroll禁用了原生的dom事件, 使用的是自定义事件
-        绑定监听: scroll/scrollEnd
-        滚动监听的类型: probeType
-        列表滑动的3种类型
-            手指触摸
-            惯性
-            编码
-        分析:
-            类名: current 标识当前分类
-            设计一个计算属性: currentIndex
-            根据哪些数据计算?
-              scrollY: 右侧滑动的Y轴坐标 (滑动过程时实时变化)
-              tops: 所有右侧分类li的top组成的数组  (列表第一次显示后就不再变化)
-        编码:
-            1. 在滑动过程中, 实时收集scrollY
-            2. 列表第一次显示后, 收集tops
-            3. 实现currentIndex的计算逻辑
-    4). 点击左侧列表项, 右侧滑动到对应位置
-    
-## 2. CartControl组件
-    1). 问题: 更新状态数据, 对应的界面不变化
-        原因: 一般方法给一个已有绑定的对象中添加一个新的属性, 这个属性没有数据绑定
-        解决: 
-            Vue.set(obj, 'xxx', value)才有数据绑定
-            this.$set(obj, 'xxx', value)才有数据绑定
-            
-## 3. ShopCart组件
-    1). 使用vuex管理购物项数据: cartFoods
-    2). 解决几个功能性bug
-
-## 4. Food组件
-    1). 父子组件:
-        子组件调用父组件的方法: 通过props将方法传递给子组件
-        父组件调用子组件的方法: 通过ref找到子组件标签对象
-
-# day05
-## 1. ShopRatings组件
-    1). 列表的过滤显示
-    2). 自定义过滤器
-    
-## 2. ShopInfo组件
-    1). 使用better-scroll实现两个方向的滑动
-    1). 通过JS动态操作样式
-    2). 解决当前路由刷新异常的bug
-    
-## 3. Search组件
-    1). 根据关键字来异步搜索显示匹配的商家列表
-    2). 如实实现没有搜索结果的提示显示
-
 ## 4. 项目优化
     1). 缓存路由组件对象
     2). 路由组件懒加载
